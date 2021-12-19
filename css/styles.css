@@ -24,6 +24,8 @@
 /* Кнопки */
 .btn {
   cursor: pointer;
+  font-family: inherit;
+  text-align: center;
 }
 
 /* Переменные */
@@ -48,8 +50,6 @@
 /* Основные стили для body */
 body {
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -81,12 +81,9 @@ body {
   color: var(--heading-secondary-text-color);
 }
 
+.current-link,
 .nav-list-item:hover,
 .nav-list-item:focus {
-  color: var(--accent-color);
-}
-
-.current-link {
   color: var(--accent-color);
 }
 
@@ -102,7 +99,7 @@ body {
   color: var(--accent-color);
 }
 
-/* Основной контент сайта */
+/* Основной контент главной страницы */
 /* Заголовки секций */
 .section-heading {
   font-size: 36px;
@@ -142,7 +139,7 @@ body {
 
 /* Секция с преимуществами компании */
 .advantages-list-item-heading {
-  font-weight: 700;
+  font-size: inherit;
   line-height: calc(16 / 14);
   text-transform: uppercase;
   color: var(--heading-secondary-text-color);
@@ -171,7 +168,7 @@ body {
 }
 
 .footer-address {
-  font-style: normal;
+  font-style: inherit;
   color: var(--footer-phys-address-text-color);
 }
 
@@ -182,4 +179,34 @@ body {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
+}
+
+/* Основной контент страницы portfolio */
+/* Фильтр */
+.portfolio-filter-list-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  color: var(--heading-secondary-text-color);
+}
+
+.current-btn,
+.portfolio-filter-list-btn:hover,
+.portfolio-filter-list-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--heading-btn-text-color);
+}
+
+/* Примеры работ из портфолио */
+.portfolio-example-list-heading {
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--heading-secondary-text-color);
+}
+
+.portfolio-example-list-text {
+  font-size: 16px;
+  line-height: calc(30 / 16);
 }
